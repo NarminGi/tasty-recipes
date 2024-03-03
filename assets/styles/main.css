@@ -1,0 +1,1118 @@
+.header {
+  width: 100%;
+  padding-top: 1.82% !important;
+  padding-bottom: 1.82% !important;
+  position: absolute;
+  color: var(--off-black);
+}
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-container .logo-image img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .header .header-container .logo-image {
+    width: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header .header-container .logo-image {
+    width: 40px;
+  }
+}
+@media (max-width: 458px) {
+  .header .header-container .logo-image {
+    width: 30px;
+  }
+}
+.header .header-container .nav-bar {
+  margin-right: 29px;
+  margin-bottom: 4px;
+}
+.header .header-container .nav-bar .nav-list {
+  display: flex;
+  gap: 24px;
+  font-family: var(--font-fam-robot);
+  font-size: 15px;
+  font-weight: 500;
+}
+.header .header-container .nav-bar .nav-list .nav-list-item {
+  cursor: pointer;
+}
+.header .header-container .nav-bar .nav-list .nav-list-item a {
+  color: var(--off-black);
+}
+.header .header-container .nav-bar .nav-list .nav-list-item i {
+  font-size: 10px;
+  padding-left: 4px;
+}
+.header .header-container .nav-bar .nav-list .blog {
+  position: relative;
+}
+.header .header-container .nav-bar .nav-list .blog .blog-list {
+  background-color: var(--off-white);
+  position: absolute;
+  top: var(--drop-down-top);
+  left: 0;
+  width: var(--drop-down-width);
+  padding: 10px 15px;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .header-container .nav-bar .nav-list .blog .blog-list .blog {
+  margin-bottom: 20px;
+}
+.header .header-container .nav-bar .nav-list .blog:hover .blog-list {
+  visibility: visible;
+  opacity: 1;
+  animation: dropdownList 0.6s;
+}
+.header .header-container .nav-bar .nav-list .pages {
+  position: relative;
+}
+.header .header-container .nav-bar .nav-list .pages .page-list {
+  background-color: var(--off-white);
+  position: absolute;
+  top: var(--drop-down-top);
+  left: 0;
+  width: var(--drop-down-width);
+  padding: 10px 15px;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .header-container .nav-bar .nav-list .pages .page-list .recipe {
+  margin-bottom: 20px;
+}
+.header .header-container .nav-bar .nav-list .pages:hover .page-list {
+  visibility: visible;
+  opacity: 1;
+  animation: dropdownList 0.6s;
+}
+@keyframes dropdownList {
+  0% {
+    top: 180%;
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    top: 160%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 991px) {
+  .header .header-container .nav-bar .nav-list {
+    display: none;
+  }
+}
+.header .header-container .search-icon {
+  margin-bottom: 3px;
+  cursor: pointer;
+  color: var(--off-white);
+  border: 1px solid var(--off-white);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .header .header-container .search-icon {
+    display: none;
+  }
+}
+.header .header-container .hamburger-menu {
+  color: var(--off-white);
+  font-family: var(--font-fam-robot);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 12px;
+  background-color: var(--gray);
+  border-radius: 3px;
+  display: none;
+}
+.header .header-container .hamburger-menu i {
+  margin-left: 5px;
+}
+@media (max-width: 991px) {
+  .header .header-container .hamburger-menu {
+    display: unset;
+  }
+}
+@media (max-width: 458px) {
+  .header .header-container .hamburger-menu {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) {
+  .header .header-container {
+    background-color: var(--gray);
+    padding: 0 20px;
+  }
+}
+@media (max-width: 458px) {
+  .header .header-container {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    background-color: var(--off-black);
+  }
+}
+
+.hero {
+  background-image: url("../images/banner.home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0% 20%;
+  display: flex;
+  align-items: center;
+}
+.hero h1 {
+  color: var(--black);
+  font-family: var(--font-fam-cursive);
+  font-weight: lighter;
+  text-align: center;
+  font-size: 6.2rem;
+  line-height: 1.2;
+}
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 545px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-top: 20%;
+    padding-bottom: 15%;
+  }
+}
+
+.recipes {
+  background-color: var(--off-white);
+  padding-top: 10% !important;
+  padding-bottom: 10% !important;
+}
+.recipes .recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipes .recipes-container .recipes-item-container {
+  flex: 1 0 33.3%;
+}
+.recipes .recipes-container .recipes-item-container .recipes-item {
+  width: 100%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipes .recipes-container .recipes-item-container .recipes-item .recipe-image {
+  width: 200px;
+  height: 200px;
+}
+.recipes .recipes-container .recipes-item-container .recipes-item .recipe-image img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .recipes .recipes-container .recipes-item-container .recipes-item .recipe-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+.recipes .recipes-container .recipes-item-container .recipes-item h4 {
+  text-align: center;
+  font-family: var(--font-fam-cursive);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 38px 0 20px 0;
+  color: var(--off-black);
+}
+.recipes .recipes-container .recipes-item-container .recipes-item .meal-type {
+  text-align: center;
+  font-family: var(--font-fam-robot);
+  color: var(--light-gray);
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+.recipes .recipes-container .recipes-item-container .recipes-item .cooking-duration {
+  text-align: center;
+  font-family: var(--font-fam-robot);
+  color: var(--light-gray);
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 31px;
+}
+@media (max-width: 991px) {
+  .recipes .recipes-container .recipes-item-container {
+    flex: 1 0 50%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .recipes .recipes-container .recipes-item-container {
+    flex: 1 0 100%;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 595px) {
+  .recipes {
+    padding-top: 15% !important;
+    padding-bottom: 5% !important;
+  }
+}
+
+.recipe-video {
+  background-color: var(--off-white);
+}
+.recipe-video .recipe-video-text-container {
+  display: flex;
+}
+.recipe-video .recipe-video-text-container .recipe-text {
+  flex: 1 0 48%;
+}
+.recipe-video .recipe-video-text-container .recipe-text h3 {
+  font-family: var(--font-fam-cursive);
+  font-size: 72px;
+  font-weight: lighter;
+  color: var(--off-black);
+  line-height: 1.2;
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .recipe-text h3 br {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .recipe-video .recipe-video-text-container .recipe-text h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .recipe-text h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.recipe-video .recipe-video-text-container .recipe-text p {
+  margin: 56px 0 53px 0;
+  color: var(--light-gray);
+  font-family: var(--font-fam-robot);
+  font-size: 14px;
+  line-height: 28px;
+}
+.recipe-video .recipe-video-text-container .recipe-text .recipe-video-button {
+  display: flex;
+}
+.recipe-video .recipe-video-text-container .recipe-text .recipe-video-button .play-video-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--play-video-button-size);
+  height: var(--play-video-button-size);
+  background-color: var(--mustard);
+  border-radius: 50%;
+  font-size: var(--font-size-thrd);
+  color: var(--off-white);
+  margin-right: 25px;
+}
+.recipe-video .recipe-video-text-container .recipe-text .recipe-video-button .recipe-video-text h4 {
+  font-family: var(--font-fam-cursive);
+  font-size: var(--font-size-thrd);
+  font-weight: lighter;
+  color: var(--off-black);
+  margin-bottom: 7px;
+}
+.recipe-video .recipe-video-text-container .recipe-text .recipe-video-button .recipe-video-text p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .recipe-text .recipe-video-button {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .recipe-video .recipe-video-text-container .recipe-text {
+    padding-right: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .recipe-text {
+    flex: 1 0 100%;
+    padding-right: 0;
+  }
+}
+.recipe-video .recipe-video-text-container .food-images {
+  flex: 1 0 44%;
+  position: relative;
+  padding-left: 95px;
+  padding-bottom: 105px;
+}
+.recipe-video .recipe-video-text-container .food-images .main-bg-image img {
+  width: 100%;
+  height: auto;
+}
+.recipe-video .recipe-video-text-container .food-images .hamburger-image {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+.recipe-video .recipe-video-text-container .food-images .hamburger-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1099px) {
+  .recipe-video .recipe-video-text-container .food-images .hamburger-image {
+    width: 160px;
+  }
+}
+@media (max-width: 991px) {
+  .recipe-video .recipe-video-text-container .food-images .hamburger-image {
+    width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .food-images .hamburger-image {
+    display: none;
+  }
+}
+.recipe-video .recipe-video-text-container .food-images .pancake-image {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+}
+.recipe-video .recipe-video-text-container .food-images .pancake-image img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1099px) {
+  .recipe-video .recipe-video-text-container .food-images .pancake-image {
+    width: 160px;
+  }
+}
+@media (max-width: 991px) {
+  .recipe-video .recipe-video-text-container .food-images .pancake-image {
+    width: 120px;
+    top: 60%;
+  }
+}
+@media (max-width: 864px) {
+  .recipe-video .recipe-video-text-container .food-images .pancake-image {
+    width: 120px;
+    top: 52%;
+  }
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .food-images .pancake-image {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .recipe-video .recipe-video-text-container .food-images {
+    padding-left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container .food-images {
+    flex: 1 0 100%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .recipe-video .recipe-video-text-container {
+    flex-wrap: wrap;
+  }
+}
+
+.birthday-catering {
+  background-color: var(--off-white);
+  width: 100%;
+  padding-top: 20% !important;
+  padding-bottom: 10% !important;
+}
+.birthday-catering .birthday-catering-collection {
+  display: flex;
+  gap: 60px;
+}
+.birthday-catering .birthday-catering-collection .birthday-catering-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgb(208, 205, 201);
+  border-radius: 10px;
+  padding: 12.5% 4% 5% 4%;
+}
+.birthday-catering .birthday-catering-collection .birthday-catering-item .birthday-catering-image {
+  position: absolute;
+  top: -25%;
+}
+.birthday-catering .birthday-catering-collection .birthday-catering-item .birthday-catering-image img {
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .birthday-catering .birthday-catering-collection .birthday-catering-item .birthday-catering-image {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 430px) {
+  .birthday-catering .birthday-catering-collection .birthday-catering-item .birthday-catering-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+.birthday-catering .birthday-catering-collection .birthday-catering-item h3 {
+  font-size: var(--font-size-thrd);
+  font-family: var(--font-fam-cursive);
+  font-weight: lighter;
+  color: var(--off-black);
+  margin-bottom: 24px;
+  text-align: center;
+}
+.birthday-catering .birthday-catering-collection .birthday-catering-item p {
+  text-align: center;
+  line-height: 28px;
+  font-family: var(--font-fam-robot);
+  color: rgb(108, 117, 122);
+  font-size: 14px;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  .birthday-catering .birthday-catering-collection .birthday-catering-item {
+    margin-bottom: 80px;
+    padding: 25% 4% 5% 4%;
+  }
+}
+@media (max-width: 595px) {
+  .birthday-catering .birthday-catering-collection .birthday-catering-item {
+    margin-bottom: 80px;
+    padding: 35% 4% 5% 4%;
+  }
+}
+@media (max-width: 991px) {
+  .birthday-catering .birthday-catering-collection {
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .birthday-catering .birthday-catering-collection {
+    flex-direction: column;
+  }
+}
+
+.discover-latest-recipes {
+  background-image: url("../images/banner.about.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 12% !important;
+  padding-bottom: 12% !important;
+}
+.discover-latest-recipes p {
+  font-size: 12px;
+  font-family: var(--font-fam-robot);
+  color: var(--mid-gray);
+  text-transform: uppercase;
+}
+.discover-latest-recipes h3 {
+  font-family: var(--font-fam-cursive);
+  color: var(--off-black);
+  font-size: 60px;
+  font-weight: lighter;
+  margin: 14px 0 75px 0;
+}
+@media (max-width: 767px) {
+  .discover-latest-recipes h3 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    line-height: 1.2;
+  }
+}
+.discover-latest-recipes .view-button {
+  padding: 14px 41px;
+  border-color: transparent;
+  background-color: var(--mustard);
+  color: var(--off-white);
+}
+.discover-latest-recipes .view-button:hover {
+  background-color: var(--off-white) !important;
+  color: var(--mustard) !important;
+}
+
+.feedback-from-customers {
+  background-color: var(--off-white);
+  padding-top: 5% !important;
+  padding-bottom: 4% !important;
+}
+.feedback-from-customers h3 {
+  font-family: var(--font-fam-cursive);
+  color: var(--off-black);
+  font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 28px;
+  text-transform: capitalize;
+  text-align: center;
+  /*@media (max-width: 768px){
+
+  }*/
+}
+@media (max-width: 991px) {
+  .feedback-from-customers h3 {
+    font-size: 30px;
+  }
+}
+.feedback-from-customers p {
+  font-family: var(--font-fam-robot);
+  color: var(--mid-gray);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 14px;
+  padding: 0 17.5%;
+  line-height: 28px;
+}
+@media (max-width: 991px) {
+  .feedback-from-customers p {
+    padding: 0;
+  }
+}
+.feedback-from-customers .customer-container {
+  display: flex;
+  gap: 60px;
+}
+.feedback-from-customers .customer-container .customer-item {
+  border: 1px solid var(--customer-border);
+  border-radius: 5px;
+  display: flex;
+  gap: 25px;
+  padding: 4% 5% 3% 4%;
+}
+.feedback-from-customers .customer-container .customer-item .customer-info h3 {
+  font-size: 24px;
+  line-height: 1.2rem;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.feedback-from-customers .customer-container .customer-item .customer-info .customer-title {
+  padding: 0;
+  font-size: 12px;
+  margin: 8px 0 25px 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: normal;
+}
+.feedback-from-customers .customer-container .customer-item .customer-info .customer-text {
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .feedback-from-customers .customer-container .customer-item {
+    flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  .feedback-from-customers .customer-container .second-scroll-item {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .feedback-from-customers .customer-container {
+    flex-direction: column;
+  }
+}
+.feedback-from-customers .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5%;
+}
+.feedback-from-customers .owl-dots div {
+  background-color: var(--customer-border);
+  height: 4px;
+  width: 20px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .feedback-from-customers .owl-dots {
+    margin: 7% 0% 2.5%;
+  }
+}
+@media (max-width: 768px) {
+  .feedback-from-customers .owl-dots {
+    margin-bottom: 5%;
+  }
+}
+
+.download-our-app {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15% !important;
+  background-color: var(--off-white);
+}
+.download-our-app .download-app-images {
+  flex: 1 0 45.4%;
+  position: relative;
+  padding-left: 100px;
+}
+.download-our-app .download-app-images .main-image img {
+  width: 100%;
+}
+.download-our-app .download-app-images .left-side-image {
+  position: absolute;
+  top: 9%;
+  left: 0;
+}
+.download-our-app .download-app-images .left-side-image img {
+  width: 100%;
+}
+@media (max-width: 1099px) {
+  .download-our-app .download-app-images .left-side-image {
+    width: 160px;
+    left: -15%;
+  }
+}
+@media (max-width: 991px) {
+  .download-our-app .download-app-images .left-side-image {
+    width: 120px;
+  }
+}
+@media (max-width: 864px) {
+  .download-our-app .download-app-images .left-side-image {
+    width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .download-our-app .download-app-images .left-side-image {
+    display: none;
+  }
+}
+.download-our-app .download-app-images .right-side-image {
+  position: absolute;
+  right: 11.3%;
+  bottom: -25.5%;
+}
+.download-our-app .download-app-images .right-side-image img {
+  width: 100%;
+}
+@media (max-width: 1099px) {
+  .download-our-app .download-app-images .right-side-image {
+    width: 160px;
+    bottom: -20%;
+  }
+}
+@media (max-width: 991px) {
+  .download-our-app .download-app-images .right-side-image {
+    width: 120px;
+    bottom: -20%;
+  }
+}
+@media (max-width: 864px) {
+  .download-our-app .download-app-images .right-side-image {
+    width: 120px;
+    bottom: -30%;
+  }
+}
+@media (max-width: 768px) {
+  .download-our-app .download-app-images .right-side-image {
+    display: none;
+  }
+}
+@media (max-width: 1099px) {
+  .download-our-app .download-app-images {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .download-our-app .download-app-images {
+    flex: 1 0 100%;
+  }
+}
+.download-our-app .download-app-info {
+  flex: 1 0 48%;
+  padding-left: 100px;
+}
+.download-our-app .download-app-info h3 {
+  font-family: var(--font-fam-cursive);
+  font-weight: lighter;
+  font-size: 72px;
+  line-height: 84px;
+  color: var(--off-black);
+  margin-bottom: 60px;
+}
+@media (max-width: 1099px) {
+  .download-our-app .download-app-info h3 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 466px) {
+  .download-our-app .download-app-info h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+.download-our-app .download-app-info .app-in-platforms {
+  font-family: var(--font-fam-robot);
+  display: flex;
+  gap: 10px;
+}
+.download-our-app .download-app-info .app-in-platforms .platforms .download-button {
+  display: flex;
+  padding: 20px 44px 20px 30px;
+  border: 1px solid var(--customer-border);
+}
+.download-our-app .download-app-info .app-in-platforms .platforms .download-button i {
+  color: var(--customer-border);
+  font-size: 40px;
+  margin-right: 14px;
+}
+@media (max-width: 545px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 444px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button i {
+    font-size: 20px;
+  }
+}
+.download-our-app .download-app-info .app-in-platforms .platforms .download-button h5 {
+  color: var(--off-black);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 545px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button h5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 394px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button h5 {
+    font-size: 12px;
+  }
+}
+.download-our-app .download-app-info .app-in-platforms .platforms .download-button p {
+  color: var(--mid-gray);
+  font-size: 12px;
+  font-weight: 300;
+}
+@media (max-width: 545px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 394px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button {
+    padding: 15px 10px 15px 10px;
+  }
+}
+@media (max-width: 444px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button {
+    padding: 15px 9px 15px 9px;
+  }
+}
+@media (max-width: 368px) {
+  .download-our-app .download-app-info .app-in-platforms .platforms .download-button {
+    padding: 15px 8px 15px 8px;
+  }
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-appstore {
+  background-color: var(--mustard);
+  transition: background-color 0.3s;
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-appstore .download-button i, .download-our-app .download-app-info .app-in-platforms .app-in-appstore .download-button p {
+  color: var(--off-black);
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-appstore:hover {
+  background-color: transparent;
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-appstore:hover i {
+  color: var(--customer-border);
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-appstore:hover p {
+  color: var(--mid-gray);
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-playstore {
+  transition: background-color 0.3s;
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-playstore .download-button i {
+  font-size: 30px;
+}
+@media (max-width: 545px) {
+  .download-our-app .download-app-info .app-in-platforms .app-in-playstore .download-button i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 394px) {
+  .download-our-app .download-app-info .app-in-platforms .app-in-playstore .download-button i {
+    font-size: 15px;
+  }
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-playstore:hover {
+  background-color: var(--mustard);
+}
+.download-our-app .download-app-info .app-in-platforms .app-in-playstore:hover .download-button i, .download-our-app .download-app-info .app-in-platforms .app-in-playstore:hover .download-button p {
+  color: var(--off-black);
+}
+@media (max-width: 991px) {
+  .download-our-app .download-app-info {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .download-our-app .download-app-info {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .download-our-app {
+    flex-wrap: wrap;
+  }
+}
+
+.footer {
+  padding-top: 5% !important;
+  padding-bottom: 5% !important;
+  background-color: var(--off-black);
+  color: var(--off-white);
+  font-family: var(--font-fam-robot);
+}
+.footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+}
+.footer .footer-top .footer-top-item-list {
+  flex: 1 0 68%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer-top .footer-top-item-list .footer-top-item {
+  flex: 1 0 25%;
+}
+.footer .footer-top .footer-top-item-list .footer-top-item label {
+  font-family: var(--font-fam-cursive);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.footer .footer-top .footer-top-item-list .footer-top-item .footer-list {
+  margin-top: 40px;
+}
+.footer .footer-top .footer-top-item-list .footer-top-item .footer-list li a {
+  font-size: 13px;
+  line-height: 42px;
+  color: var(--footer-text);
+}
+@media (max-width: 991px) {
+  .footer .footer-top .footer-top-item-list .footer-top-item {
+    flex: 1 0 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer-top .footer-top-item-list .footer-top-item {
+    flex: 1 0 100%;
+    margin-bottom: 30px;
+  }
+}
+.footer .footer-top .footer-top-item-input {
+  flex: 1 0 32%;
+}
+.footer .footer-top .footer-top-item-input label {
+  font-family: var(--font-fam-cursive);
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.footer .footer-top .footer-top-item-input p {
+  color: var(--footer-text);
+  font-size: 14px;
+  line-height: 26px;
+  margin: 50px 0 40px 0;
+}
+.footer .footer-top .footer-top-item-input .subscription-form {
+  position: relative;
+  margin-bottom: 20px;
+}
+.footer .footer-top .footer-top-item-input .subscription-form .email-form {
+  width: 100%;
+  padding: 18px 0px 18px 20px;
+  outline: none;
+  background-color: var(--footer-input-bg);
+  color: var(--off-white);
+  font-family: var(--font-fam-robot);
+  border: none;
+}
+.footer .footer-top .footer-top-item-input .subscription-form .email-form::-moz-placeholder {
+  color: var(--footer-placeholder);
+  font-size: 14px;
+}
+.footer .footer-top .footer-top-item-input .subscription-form .email-form::placeholder {
+  color: var(--footer-placeholder);
+  font-size: 14px;
+}
+.footer .footer-top .footer-top-item-input .subscription-form .submit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  cursor: pointer;
+  background-color: var(--mustard);
+  outline: none;
+  border: none;
+}
+.footer .footer-top .footer-top-item-input .subscription-form .submit-button i {
+  padding: 0px 22px;
+  font-size: 14px;
+  color: var(--off-black);
+}
+@media (max-width: 991px) {
+  .footer .footer-top .footer-top-item-input {
+    width: 43%;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer-top .footer-top-item-input {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .footer .footer-top {
+    flex-direction: column;
+  }
+}
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-bottom .copy-right p {
+  font-size: 15px;
+  color: var(--footer-text);
+}
+.footer .footer-bottom .copy-right p a {
+  color: var(--mustard);
+}
+.footer .footer-bottom .social-media .social-media-list {
+  display: flex;
+  gap: 5px;
+}
+.footer .footer-bottom .social-media .social-media-list li {
+  width: 40px;
+  height: 40px;
+  background-color: var(--footer-button-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.footer .footer-bottom .social-media .social-media-list li a i {
+  color: var(--footer-button-txt);
+  font-size: 15px;
+}
+.footer .footer-bottom .social-media .social-media-list li:hover {
+  cursor: pointer;
+  background-color: var(--mustard);
+}
+.footer .footer-bottom .social-media .social-media-list li:hover i {
+  color: var(--off-black);
+}
+@media (max-width: 768px) {
+  .footer .footer-bottom .social-media {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .footer-bottom {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0% 8.9%;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0% 13%;
+  }
+}
+@media (max-width: 596px) {
+  .container {
+    padding: 0% 8.9%;
+  }
+}
+
+.view-button {
+  cursor: pointer;
+  font-family: var(--font-fam-robot);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--off-black);
+  padding: 15px 34px;
+  border: 1px solid var(--mustard);
+  border-radius: 30px;
+  transition: background-color 0.5s, color 0.5s;
+}
+.view-button:hover {
+  background-color: var(--mustard);
+  color: var(--off-white);
+}
+
+.active {
+  background-color: var(--mustard) !important;
+}
+
+:root {
+  --black: rgb(26, 23, 26);
+  --off-black: rgb(24, 26, 27);
+  --off-white: rgb(220, 218, 215);
+  --gray: rgb(42, 46, 47);
+  --mid-gray: rgb(108, 117, 122);
+  --light-gray: rgb(108, 117, 122);
+  --customer-border: rgb(208, 205, 201);
+  --mustard: rgb(182, 152, 61);
+  --footer-text: rgb(143, 136, 127);
+  --footer-button-bg: rgb(51, 55, 57);
+  --footer-button-txt: rgb(108, 117, 121);
+  --footer-input-bg: rgb(60, 65, 68);
+  --footer-placeholder: rgb(84, 91, 95);
+  --font-fam-robot: "Roboto", sans-serif;
+  --font-fam-cursive: "Satisfy", cursive;
+  --font-size-thrd: 30px;
+  --drop-down-top: 160%;
+  --drop-down-width: 200px;
+  --play-video-button-size: 80px;
+}/*# sourceMappingURL=main.css.map */

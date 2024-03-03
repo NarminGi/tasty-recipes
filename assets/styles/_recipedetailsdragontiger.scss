@@ -1,0 +1,100 @@
+.dragontiger{
+    padding-top: 6% !important;
+    background-color: var(--off-white);
+    font-family: var(--font-fam-robot);
+    font-size: 14px;
+    color: var(--mid-gray);
+    .dragon-tiger-phoenix-container{
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        .dragon-tiger-phoenix-image{
+            flex: 1 0 48.65%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .dragon-tiger-phoenix-details{
+            padding-top: 50px;
+            padding-left: 98px;
+            h3{
+                font-family: var(--font-fam-cursive);
+                color: var(--dragon-tiger);
+                font-size: 30px;
+                margin-bottom: 20px;
+                font-weight: 500;
+            }
+            p{
+                font-weight: 400;
+                line-height: 28px;
+            }
+            .dragon-tiger-ratings-container{
+                flex: 1 0 50%;
+                .dragon-tiger-ratings-list{
+                    margin-top: 38px;
+                    margin-bottom: 35px;
+                    .dragon-tiger-ratings-list-item{
+                    text-transform: capitalize;
+                        p{
+                            line-height: 24px;
+                            strong{
+                                display: inline-block;
+                                color: var(--off-black);
+                                width: 100px;
+                                font-weight: 300;
+                            }
+                            i{
+                                color: var(--mustard);
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .recipe-details-socials-list-container{
+                .recipe-details-socials-list{
+                    display: flex;
+                    .recipe-details-socials-list-item{
+                        a{
+                            color: var( --recipe-details-links);
+                            margin-right: 13px;
+                            font-size: 13px;
+                            transition: color 0.3s;
+                        }
+                        &:hover{
+                            a{
+                                color: var(--off-black);
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width: 991px){
+                padding-left: 50px;
+            }
+            @media (max-width: 768px){
+                padding-left: 0px;
+            }
+        }
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+    .recipe-details-info{
+        p{
+            margin-bottom: 30px; 
+            line-height: 30px;
+            font-weight: 400;
+        }
+        .dragon-tiger-last-text-line{
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 768px){
+        padding-top: 10% !important;
+    }
+    @media (max-width: 495px){
+        padding-top: 15% !important;
+    }
+} 

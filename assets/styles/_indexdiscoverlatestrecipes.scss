@@ -1,0 +1,37 @@
+.discover-latest-recipes{
+    background-image: url('../images/banner.about.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 12% !important;
+    padding-bottom: 12% !important;
+    p{
+        font-size: 12px;
+        font-family: var(--font-fam-robot);
+        color: var(--mid-gray);
+        text-transform: uppercase;
+    }
+    h3{
+        font-family: var(--font-fam-cursive);
+        color: var(--off-black);
+        font-size: 60px;
+        font-weight: lighter;
+        margin: 14px 0 75px 0;
+        @media (max-width: 767px){
+            font-size: 40px;
+            margin-bottom: 35px;
+            line-height: 1.2;
+        }
+    }
+    .view-button{
+        padding: 14px 41px;
+        border-color: transparent;
+        background-color: var(--mustard);
+        color: var(--off-white);
+        &:hover{
+            background-color: var(--off-white) !important;
+            color: var(--mustard) !important;
+        }
+    }
+}

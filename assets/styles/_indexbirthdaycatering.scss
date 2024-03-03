@@ -1,0 +1,64 @@
+.birthday-catering{
+    background-color: var(--off-white);
+    width: 100%;
+    padding-top: 20% !important;
+    padding-bottom: 10% !important;
+    .birthday-catering-collection{
+        display: flex;
+        gap: 60px;
+        .birthday-catering-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            border: 1px solid rgb(208, 205, 201);
+            border-radius: 10px;
+            padding: 12.5% 4% 5% 4%;
+            .birthday-catering-image{
+                position: absolute;
+                top: -25%;
+                img{
+                    width: 100%;
+                }
+                @media (min-width: 768px) and (max-width: 991px){
+                    width: 130px;
+                    height: 130px;
+                }
+                @media (max-width: 430px){
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            h3{
+                font-size: var(--font-size-thrd);
+                font-family: var(--font-fam-cursive);
+                font-weight: lighter;
+                color: var(--off-black);
+                margin-bottom: 24px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                line-height: 28px;
+                font-family: var(--font-fam-robot);
+                color: rgb(108, 117, 122);
+                font-size: 14px;
+                font-weight: 300;
+            }
+            @media (max-width: 768px){
+                margin-bottom: 80px;
+                padding: 25% 4% 5% 4%;
+            }
+            @media (max-width: 595px){
+                margin-bottom: 80px;
+                padding: 35% 4% 5% 4%;
+            }
+        }
+        @media (max-width: 991px){
+            gap: 15px;
+        }
+        @media (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+}

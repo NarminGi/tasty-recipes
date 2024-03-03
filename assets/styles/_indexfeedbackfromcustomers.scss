@@ -1,0 +1,96 @@
+.feedback-from-customers{
+    background-color: var(--off-white);
+    padding-top: 5% !important;
+    padding-bottom: 4% !important;
+    h3{
+        font-family: var(--font-fam-cursive);
+        color: var(--off-black);
+        font-size: 60px;
+        font-weight: lighter;
+        margin-bottom: 28px;
+        text-transform: capitalize;
+        text-align: center;
+        /*@media (max-width: 768px){
+            
+        }*/
+        @media (max-width: 991px){
+            font-size: 30px;
+        }
+    }
+    p{
+        font-family: var(--font-fam-robot);
+        color: var(--mid-gray);
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 14px;
+        padding: 0 17.5%;
+        line-height: 28px;
+        @media (max-width: 991px){
+            padding: 0;
+        }
+    }
+    .customer-container{
+        display: flex;
+        gap: 60px;
+        .customer-item{
+            border: 1px solid var(--customer-border);
+            border-radius: 5px;
+            display: flex;
+            gap: 25px;
+            padding: 4% 5% 3% 4%;
+            .customer-info{
+                h3{
+                    font-size: 24px;
+                    line-height: 1.2rem;
+                    text-align: left;
+                    margin-bottom: 15px;
+                }
+                .customer-title{
+                    padding: 0;
+                    font-size: 12px;
+                    margin: 8px 0 25px 0;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+                .customer-text{
+                    padding: 0;
+                    text-align: left;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+            @media (max-width: 768px){
+                flex-direction: column;
+            }
+        }
+        .second-scroll-item{
+            @media (max-width: 991px){
+                display: none;
+            }
+        }
+        @media (max-width: 991px){
+            flex-direction: column;
+        }
+    }
+    .owl-dots{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 5%;
+        div{
+            background-color: var(--customer-border);
+            height: 4px;
+            width: 20px;
+            cursor: pointer;
+        }
+        @media (max-width: 991px){
+            margin: 7% 0% 2.5%;
+        }
+        @media (max-width: 768px){
+            margin-bottom: 5%;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.recipe-video{
+    background-color: var(--off-white);
+    .recipe-video-text-container{
+        display: flex;
+        .recipe-text{
+            flex: 1 0 48%;
+            h3{
+                font-family: var(--font-fam-cursive);
+                font-size: 72px;
+                font-weight: lighter;
+                color: var(--off-black);
+                line-height: 1.2;
+                br{
+                    @media (max-width: 768px){
+                        display: none;
+                    }
+                }
+                @media (max-width: 991px){
+                    font-size: 40px;
+                }
+                @media (max-width: 768px){
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            p{
+                margin: 56px 0 53px 0;
+                color: var(--light-gray);
+                font-family: var(--font-fam-robot);
+                font-size: 14px;
+                line-height: 28px;
+            }
+            .recipe-video-button{
+                display: flex;
+                .play-video-button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: var(--play-video-button-size);
+                    height: var(--play-video-button-size);
+                    background-color: var(--mustard);
+                    border-radius: 50%;
+                    font-size: var(--font-size-thrd);
+                    color: var(--off-white);
+                    margin-right: 25px;
+                }
+                .recipe-video-text{
+                    h4{
+                        font-family: var(--font-fam-cursive);
+                        font-size: var(--font-size-thrd);
+                        font-weight: lighter;
+                        color: var(--off-black);
+                        margin-bottom: 7px;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                }
+                @media (max-width: 768px){
+                    margin-bottom: 60px;     
+                }
+            }
+            @media (max-width: 991px){
+                padding-right: 60px;
+            }
+            @media (max-width: 768px){
+                flex: 1 0 100%;
+                padding-right: 0;
+            }
+        }
+        .food-images{
+            flex: 1 0 44%;
+            position: relative;
+            padding-left: 95px;
+            padding-bottom: 105px;
+            .main-bg-image{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .hamburger-image{
+                position: absolute;
+                top: 10%;
+                left: 0;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                @media (max-width: 1099px){
+                    width: 160px;
+                }
+                @media (max-width: 991px){
+                    width: 120px;
+                }
+                @media (max-width: 768px){
+                    display: none;
+                }
+            }
+            .pancake-image{
+                position: absolute;
+                right: 12%;
+                bottom: 0;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                @media (max-width: 1099px){
+                    width: 160px;
+                }
+                @media (max-width: 991px){
+                    width: 120px;
+                    top: 60%;
+                }
+                @media (max-width: 864px){
+                    width: 120px;
+                    top: 52%;
+                }
+                @media (max-width: 768px){
+                    display: none;
+                }
+            }
+            @media (max-width: 991px){
+                padding-left: 60px;
+            }
+            @media (max-width: 768px){
+                flex: 1 0 100%;     
+                padding-left: 0; 
+            }
+        }
+        @media (max-width: 768px){
+            flex-wrap: wrap;
+        }
+    }
+}

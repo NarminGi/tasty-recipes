@@ -1,0 +1,31 @@
+.hero{
+    background-image: url('../images/banner.home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 0% 20%;
+    display: flex;
+    align-items: center;
+    h1{
+        color: var(--black);
+        font-family: var(--font-fam-cursive);
+        font-weight: lighter;
+        text-align: center;
+        font-size: 6.2rem;
+        line-height: 1.2;
+        @media (max-width: 991px){
+            font-size: 45px;
+        }
+        @media (max-width: 545px){
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 768px){
+        height: auto;
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+}
+
+

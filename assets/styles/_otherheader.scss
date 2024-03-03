@@ -1,0 +1,26 @@
+.nav-list{
+    color: var(--off-white) !important;
+    .nav-list-item{
+        a{
+            color: var(--off-white) !important;
+        }        
+    }
+    .blog{
+        .blog-list{
+            li{
+                a{
+                    color: var(--off-black) !important;
+                }
+            }
+        }
+    }
+    .pages{
+        .page-list{
+            li{
+                a{
+                    color: var(--off-black) !important;
+                }
+            }
+        }
+    }
+}

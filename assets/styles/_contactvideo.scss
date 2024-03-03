@@ -1,0 +1,25 @@
+.contact-video{
+    background-color: var(--off-white);
+    padding-top: 8% !important;
+    padding-bottom: 8% !important;
+    .video-frame{
+        padding: 16% 0;
+        background-color: var(--warning-bg);
+        text-align: center;
+        font-family: var(--font-fam-robot);
+        color: var(--warning-msg);
+        h5{
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        p{
+            margin: 5px;
+            font-size: 12px;
+        }
+    }
+    @media (max-width: 568px){
+        display: none;
+    }
+} 

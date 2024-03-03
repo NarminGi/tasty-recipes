@@ -1,0 +1,26 @@
+.contact-hero{
+    background-image: url('../images/banner.others.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18.55% 0 10.2%;
+    h2{
+        font-size: 72px;
+        color: var(--off-white);
+        font-family: var(--font-fam-cursive);
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        text-align: center;
+        font-weight: 400;
+        @media (max-width: 991px){
+            font-size: 45px;
+        }
+        @media (max-width: 545px){
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width: 768px){
+        background-size: cover;
+        padding: 25% 0 15%;
+    }
+}

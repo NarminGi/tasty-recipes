@@ -1,0 +1,68 @@
+@import 'header';
+@import 'otherheader';
+@import 'otherhero';
+@import 'recipedetailsdragontiger';
+@import 'indexrecipes';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0% 8.9%;
+    @media (max-width: 768px){
+        padding: 0% 13%;
+    }
+    @media (max-width: 596px){
+        padding: 0% 8.9%;
+    }
+}
+
+.view-button{
+    cursor: pointer;
+    font-family: var(--font-fam-robot);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--off-black);
+    padding: 15px 34px;
+    border: 1px solid var(--mustard);
+    border-radius: 30px;
+    transition: background-color 0.5s , color 0.5s;
+    &:hover{
+        background-color: var(--mustard);
+        color: var(--off-white);
+    }
+}
+
+.active{
+    background-color: var(--mustard) !important;
+}
+
+:root{
+    --black: rgb(26, 23, 26);
+    --off-black: rgb(24, 26, 27);
+    --off-white: rgb(220, 218, 215);
+    --gray: rgb(42, 46, 47);
+    --dragon-tiger: rgb(48, 52, 54);
+    --mid-gray: rgb(108, 117, 122);
+    --light-gray: rgb(108, 117, 122);
+    --customer-border: rgb(208, 205, 201);
+    --mustard: rgb(182, 152, 61);
+    --footer-text: rgb(143, 136, 127);
+    --footer-button-bg: rgb(51, 55, 57);
+    --footer-button-txt: rgb(108, 117, 121);
+    --recipe-details-links: rgb(184, 180, 174);
+    --footer-input-bg: rgb(60, 65, 68);
+    --footer-placeholder: rgb(84, 91, 95);
+    --font-fam-robot: "Roboto", sans-serif;
+    --font-fam-cursive: "Satisfy", cursive;
+    --font-size-thrd: 30px;
+    --drop-down-top: 160%;
+    --drop-down-width: 200px;
+    --play-video-button-size: 80px;
+}

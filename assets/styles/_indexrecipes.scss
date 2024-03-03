@@ -1,0 +1,66 @@
+.recipes{
+    background-color: var(--off-white);
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+    .recipes-container{
+        display: flex;
+        flex-wrap: wrap;
+        .recipes-item-container{
+            flex: 1 0 33.3%;
+            .recipes-item{
+                width: 100%;
+                text-transform: capitalize;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .recipe-image{
+                    width: 200px;
+                    height: 200px;
+                    img{
+                        width: 100%;
+                        
+                    }
+                    @media (max-width: 991px){
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+                h4{
+                    text-align: center;
+                    font-family: var(--font-fam-cursive);
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin: 38px 0 20px 0;
+                    color: var(--off-black);
+                }
+                .meal-type{
+                    text-align: center;
+                    font-family: var(--font-fam-robot);
+                    color: var(--light-gray);
+                    font-size: 12px;
+                    margin-bottom: 7px;
+                }
+                .cooking-duration{
+                    text-align: center;
+                    font-family: var(--font-fam-robot);
+                    color: var(--light-gray);
+                    font-size: 14px;
+                    line-height: 28px;
+                    margin-bottom: 31px;
+                }
+            }
+            @media (max-width: 991px){
+                flex: 1 0 50%;
+                margin-bottom: 40px;
+            }
+            @media (max-width: 768px){
+                flex: 1 0 100%;
+                margin-bottom: 60px;
+            }
+        }
+    }
+    @media (max-width: 595px){
+        padding-top: 15% !important;
+        padding-bottom: 5% !important;
+    }
+}

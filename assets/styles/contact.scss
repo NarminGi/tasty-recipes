@@ -1,0 +1,52 @@
+@import 'header';
+@import 'otherheader';
+@import 'otherhero';
+@import 'contactvideo';
+@import 'contactform';
+@import 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0% 8.9%;
+    @media (max-width: 768px){
+        padding: 0% 13%;
+    }
+    @media (max-width: 596px){
+        padding: 0% 8.9%;
+    }
+}
+
+:root{
+    --black: rgb(26, 23, 26);
+    --off-black: rgb(24, 26, 27);
+    --off-white: rgb(220, 218, 215);
+    --grayish: rgb(54, 58, 60);
+    --gray: rgb(42, 46, 47);
+    --mid-gray: rgb(108, 117, 122);
+    --light-gray: rgb(108, 117, 122);
+    --customer-border: rgb(208, 205, 201);
+    --contact-icon: rgb(147, 142, 135);
+    --mustard: rgb(182, 152, 61);
+    --footer-text: rgb(143, 136, 127);
+    --footer-button-bg: rgb(51, 55, 57);
+    --footer-button-txt: rgb(108, 117, 121);
+    --warning-msg: rgb(69, 75, 78);
+    --warning-bg: rgb(206, 203, 199);
+    --form-border-clr: rgb(203, 200, 196);
+    --form-txt-clr: rgb(183, 179, 173);
+    --footer-input-bg: rgb(60, 65, 68);
+    --footer-placeholder: rgb(84, 91, 95);
+    --font-fam-robot: "Roboto", sans-serif;
+    --font-fam-cursive: "Satisfy", cursive;
+    --font-size-thrd: 30px;
+    --drop-down-top: 160%;
+    --drop-down-width: 200px;
+    --play-video-button-size: 80px;
+}
