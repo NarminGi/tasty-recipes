@@ -1,9 +1,11 @@
 .header {
   width: 100%;
-  padding-top: 1.82% !important;
-  padding-bottom: 1.82% !important;
   position: absolute;
   color: var(--off-black);
+  /* personal notes for later use:
+  padding-top: 1.82% !important;
+  padding-bottom: 1.82% !important;
+  */
 }
 .header .header-container {
   display: flex;
@@ -41,6 +43,7 @@
 }
 .header .header-container .nav-bar .nav-list .nav-list-item {
   cursor: pointer;
+  padding: 13.8% 0%;
 }
 .header .header-container .nav-bar .nav-list .nav-list-item a {
   color: var(--off-black);
@@ -58,17 +61,17 @@
   top: var(--drop-down-top);
   left: 0;
   width: var(--drop-down-width);
-  padding: 10px 15px;
+  padding: 10px 30px;
   visibility: hidden;
   opacity: 0;
 }
 .header .header-container .nav-bar .nav-list .blog .blog-list .blog {
-  margin-bottom: 20px;
+  margin-bottom: var(--drop-down-margin);
 }
 .header .header-container .nav-bar .nav-list .blog:hover .blog-list {
   visibility: visible;
   opacity: 1;
-  animation: dropdownList 0.6s;
+  animation: dropdownList 0.7s;
 }
 .header .header-container .nav-bar .nav-list .pages {
   position: relative;
@@ -79,26 +82,26 @@
   top: var(--drop-down-top);
   left: 0;
   width: var(--drop-down-width);
-  padding: 10px 15px;
+  padding: 10px 30px;
   visibility: hidden;
   opacity: 0;
 }
 .header .header-container .nav-bar .nav-list .pages .page-list .recipe {
-  margin-bottom: 20px;
+  margin-bottom: var(--drop-down-margin);
 }
 .header .header-container .nav-bar .nav-list .pages:hover .page-list {
   visibility: visible;
   opacity: 1;
-  animation: dropdownList 0.6s;
+  animation: dropdownList 0.7s;
 }
 @keyframes dropdownList {
   0% {
-    top: 180%;
+    top: 73%;
     visibility: hidden;
     opacity: 0;
   }
   100% {
-    top: 160%;
+    top: var(--drop-down-top);
     visibility: visible;
     opacity: 1;
   }
@@ -1018,7 +1021,8 @@
   --font-fam-robot: "Roboto", sans-serif;
   --font-fam-cursive: "Satisfy", cursive;
   --font-size-thrd: 30px;
-  --drop-down-top: 160%;
+  --drop-down-top: 70%;
   --drop-down-width: 200px;
+  --drop-down-margin: 25px;
   --play-video-button-size: 80px;
 }/*# sourceMappingURL=about.css.map */
