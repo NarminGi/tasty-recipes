@@ -262,6 +262,7 @@
   padding-right: 15px;
 }
 .contact-form .contact-form-flex .contact-form-container .message-area {
+  resize: none;
   width: 100%;
   height: 190px;
   background-color: transparent;
@@ -622,4 +623,7 @@
   --drop-down-width: 200px;
   --drop-down-margin: 25px;
   --play-video-button-size: 80px;
+  --form-border-clr: rgb(203, 200, 196);
+  --form-txt-clr: rgb(183, 179, 173);
+  --contact-icon: rgb(143, 137, 127);
 }/*# sourceMappingURL=contact.css.map */
