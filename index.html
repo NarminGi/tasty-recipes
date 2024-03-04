@@ -1,275 +1,365 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasty Recipes</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/main.css" />
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header container">
-        <div class="header-container">
-            <div class="logo-image">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Logo image" title="Steak Shop Logo">
-                </a>
-            </div>
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="index.html">Home</a></li>
-                    <li class="nav-list-item"><a href="about.html">About</a></li>
-                    <li class="nav-list-item"><a href="recipes.html">Recipes</a></li>
-                    <li class="nav-list-item blog">Blog<i class="fa-solid fa-angle-down"></i>
-                        <ul class="blog-list">
-                            <li class="blog"><a href="#">Blog</a></li>
-                            <li><a href="#">Single-Blog</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-list-item pages">
-                        Pages<i class="fa-solid fa-angle-down"></i>
-                        <ul class="page-list">
-                            <li class="recipe"><a href="recipesdetails.html">Recipes Details</a></li>
-                            <li><a href="#">Elements</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-list-item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="hamburger-menu">MENU <i class="fa-solid fa-bars"></i></div>
+      <div class="header-container">
+        <div class="logo-image">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo.png"
+              alt="Logo image"
+              title="Steak Shop Logo"
+            />
+          </a>
         </div>
+        <nav class="nav-bar">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="index.html">Home</a></li>
+            <li class="nav-list-item"><a href="about.html">About</a></li>
+            <li class="nav-list-item"><a href="recipes.html">Recipes</a></li>
+            <li class="nav-list-item blog">
+              Blog<i class="fa-solid fa-angle-down"></i>
+              <ul class="blog-list">
+                <li class="blog"><a href="#">Blog</a></li>
+                <li><a href="#">Single-Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-list-item pages">
+              Pages<i class="fa-solid fa-angle-down"></i>
+              <ul class="page-list">
+                <li class="recipe">
+                  <a href="recipesdetails.html">Recipes Details</a>
+                </li>
+                <li><a href="#">Elements</a></li>
+              </ul>
+            </li>
+            <li class="nav-list-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="hamburger-menu">MENU <i class="fa-solid fa-bars"></i></div>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <h1>Chicken Dish With Per Boiled Egg</h1>
-        </section>
-        <section class="recipes container">
-            <div class="recipes-container">
-                <div class="recipes-item-container">
-                    <div class="recipes-item">
-                        <div class="recipe-image">
-                            <img src="assets/images/recpie_1.png" alt="Egg manchurian image">            
-                        </div>
-                        <h4>Egg manchurian</h4>
-                        <p class="meal-type">Appetizer</p>
-                        <p class="cooking-duration">Time needs: 30 mins</p>
-                        <a class="view-button" href="#">View Full Recipe</a>
-                    </div>
-                </div>
-                <div class="recipes-item-container">
-                    <div class="recipes-item">
-                        <div class="recipe-image">
-                            <img src="assets/images/recpie_2.png" alt="Pure vegetable bowl image">
-                        </div>
-                        <h4>Pure vegetable bowl</h4>
-                        <p class="meal-type">Appetizer</p>
-                        <p class="cooking-duration">Time needs: 30 mins</p>
-                        <a class="view-button" href="#">View Full Recipe</a>
-                    </div>
-                </div>
-                <div class="recipes-item-container">
-                    <div class="recipes-item">
-                        <div class="recipe-image">
-                            <img src="assets/images/recpie_3.png" alt="Egg masala ramen image">
-                        </div>
-                        <h4>Egg masala ramen</h4>
-                        <p class="meal-type">Appetizer</p>
-                        <p class="cooking-duration">Time needs: 30 mins</p>
-                        <a class="view-button" href="#">View Full Recipe</a>
-                    </div>
-                </div>
+      <section class="hero">
+        <h1>Chicken Dish With Per Boiled Egg</h1>
+      </section>
+      <section class="recipes container">
+        <div class="recipes-container">
+          <div class="recipes-item-container">
+            <div class="recipes-item">
+              <div class="recipe-image">
+                <img
+                  src="assets/images/recpie_1.png"
+                  alt="Egg manchurian image"
+                />
+              </div>
+              <h4>Egg manchurian</h4>
+              <p class="meal-type">Appetizer</p>
+              <p class="cooking-duration">Time needs: 30 mins</p>
+              <a class="view-button" href="#">View Full Recipe</a>
             </div>
-        </section>
-        <section class="recipe-video container">
-            <div class="recipe-video-text-container">
-                <div class="recipe-text">
-                    <h3>Recipe videos<br>that never misses any portion</h3>
-                    <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women.</p>
-                    <div class="recipe-video-button">
-                        <a class="play-video-button" href="https://www.youtube.com/watch?v=lr6AMBsjxrY"><i class="fa-solid fa-play"></i></a>
-                        <div class="recipe-video-text">
-                            <h4>Watch Video</h4>
-                            <p>You will love our execution</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="food-images">
-                    <div class="main-bg-image">
-                    <img src="assets/images/big.png" alt="Noodle image">
-                    </div>
-                    <div class="hamburger-image">
-                        <img src="assets/images/small_1.png" alt="Hmaburger image">
-                    </div>
-                    <div class="pancake-image">
-                        <img src="assets/images/small_2.png" alt="Pancake image">
-                    </div>
-                </div>
+          </div>
+          <div class="recipes-item-container">
+            <div class="recipes-item">
+              <div class="recipe-image">
+                <img
+                  src="assets/images/recpie_2.png"
+                  alt="Pure vegetable bowl image"
+                />
+              </div>
+              <h4>Pure vegetable bowl</h4>
+              <p class="meal-type">Appetizer</p>
+              <p class="cooking-duration">Time needs: 30 mins</p>
+              <a class="view-button" href="#">View Full Recipe</a>
             </div>
-        </section>
-        <section class="birthday-catering container">
-            <div class="birthday-catering-collection">
-                <div class="birthday-catering-item">
-                    <div class="birthday-catering-image">
-                        <img src="assets/images/recpie_4.png" alt="A yellow soup image">
-                    </div>
-                    <h3>Birthday Catering</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="birthday-catering-item">
-                    <div class="birthday-catering-image">
-                        <img src="assets/images/recpie_5.png" alt="A veggie soup image">
-                    </div>
-                    <h3>Birthday Catering</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="birthday-catering-item">
-                    <div class="birthday-catering-image">
-                        <img src="assets/images/recpie_6.png" alt="A mixed smoothie image">
-                    </div>
-                    <h3>Birthday Catering</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+          </div>
+          <div class="recipes-item-container">
+            <div class="recipes-item">
+              <div class="recipe-image">
+                <img
+                  src="assets/images/recpie_3.png"
+                  alt="Egg masala ramen image"
+                />
+              </div>
+              <h4>Egg masala ramen</h4>
+              <p class="meal-type">Appetizer</p>
+              <p class="cooking-duration">Time needs: 30 mins</p>
+              <a class="view-button" href="#">View Full Recipe</a>
             </div>
-        </section>
-        <section class="discover-latest-recipes container">
-            <p>Thousands of recipes are waiting to be watched</p>
-            <h3>Discover latest trending recipes</h3>
-            <a class="view-button" href="#">View All Recipes</a>
-        </section>
-        <section class="feedback-from-customers container">
-            <h3>Feedback from customers</h3>
-            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially
-                in the workplace. That’s why it’s crucial that, as women.</p>
-            <div class="customer-container">
-                <div class="customer-item">
-                    <div class="customer-image">
-                        <img src="assets/images/customer1.png" alt="A blonde man photo">
-                    </div>
-                    <div class="customer-info">
-                        <h3>Adame Nesane</h3>
-                        <p class="customer-title">Chief customer</p>
-                        <p class="customer-text">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
-                    </div>
-                </div>
-                <div class="customer-item second-scroll-item">
-                    <div class="customer-image">
-                        <img src="assets/images/customer2.png" alt="A brunette man photo">
-                    </div>
-                    <div class="customer-info">
-                        <h3>Adame Nesane</h3>
-                        <p class="customer-title">Chief customer</p>
-                        <p class="customer-text">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipe-video container">
+        <div class="recipe-video-text-container">
+          <div class="recipe-text">
+            <h3>Recipe videos<br />that never misses any portion</h3>
+            <p>
+              inappropriate behavior is often laughed off as “boys will be
+              boys,” women face higher conduct standards especially in the
+              workplace. That’s why it’s crucial that, as women.
+            </p>
+            <div class="recipe-video-button">
+              <a
+                class="play-video-button"
+                href="https://www.youtube.com/watch?v=lr6AMBsjxrY"
+                ><i class="fa-solid fa-play"></i
+              ></a>
+              <div class="recipe-video-text">
+                <h4>Watch Video</h4>
+                <p>You will love our execution</p>
+              </div>
             </div>
-            <div class="owl-dots">
-                <div class="active"></div>
-                <div></div>
-                <div></div>
+          </div>
+          <div class="food-images">
+            <div class="main-bg-image">
+              <img src="assets/images/big.png" alt="Noodle image" />
             </div>
-        </section>
-        <section class="download-our-app container">
-            <div class="download-app-images">
-                <div class="main-image">
-                    <img src="assets/images/big_1.png" alt="Octopus dish">
-                </div>
-                <div class="left-side-image">
-                    <img src="assets/images/small_sm1.png" alt="Colorful smoothies">
-                </div>
-                <div class="right-side-image">
-                    <img src="assets/images/sm2.png" alt="A salad bowl">
-                </div>
+            <div class="hamburger-image">
+              <img src="assets/images/small_1.png" alt="Hmaburger image" />
             </div>
-            <div class="download-app-info">
-                <h3>Download app to get recipes from Everywhere</h3>
-                <div class="app-in-platforms">
-                    <a class="platforms app-in-appstore" href="#">
-                        <div class="download-button">
-                            <i class="fa-brands fa-apple"></i>
-                            <div>
-                                <h5>Available</h5>
-                                <p>on App Store</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="platforms app-in-playstore" href="#">
-                        <div class="download-button">
-                            <i class="fa-brands fa-android"></i>
-                            <div>
-                                <h5>Download</h5>
-                                <p>from Play Store</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+            <div class="pancake-image">
+              <img src="assets/images/small_2.png" alt="Pancake image" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="birthday-catering container">
+        <div class="birthday-catering-collection">
+          <div class="birthday-catering-item">
+            <div class="birthday-catering-image">
+              <img src="assets/images/recpie_4.png" alt="A yellow soup image" />
+            </div>
+            <h3>Birthday Catering</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="birthday-catering-item">
+            <div class="birthday-catering-image">
+              <img src="assets/images/recpie_5.png" alt="A veggie soup image" />
+            </div>
+            <h3>Birthday Catering</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="birthday-catering-item">
+            <div class="birthday-catering-image">
+              <img
+                src="assets/images/recpie_6.png"
+                alt="A mixed smoothie image"
+              />
+            </div>
+            <h3>Birthday Catering</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="discover-latest-recipes container">
+        <p>Thousands of recipes are waiting to be watched</p>
+        <h3>Discover latest trending recipes</h3>
+        <a class="view-button" href="#">View All Recipes</a>
+      </section>
+      <section class="feedback-from-customers container">
+        <h3>Feedback from customers</h3>
+        <p>
+          inappropriate behavior is often laughed off as “boys will be boys,”
+          women face higher conduct standards especially in the workplace.
+          That’s why it’s crucial that, as women.
+        </p>
+        <div class="customer-container">
+          <div class="customer-item">
+            <div class="customer-image">
+              <img src="assets/images/customer1.png" alt="A blonde man photo" />
+            </div>
+            <div class="customer-info">
+              <h3>Adame Nesane</h3>
+              <p class="customer-title">Chief customer</p>
+              <p class="customer-text">
+                You're had. Subdue grass Meat us winged years you'll doesn't.
+                fruit two also won one yielding creepeth third give may never
+                lie alternet food.
+              </p>
+            </div>
+          </div>
+          <div class="customer-item second-scroll-item">
+            <div class="customer-image">
+              <img
+                src="assets/images/customer2.png"
+                alt="A brunette man photo"
+              />
+            </div>
+            <div class="customer-info">
+              <h3>Adame Nesane</h3>
+              <p class="customer-title">Chief customer</p>
+              <p class="customer-text">
+                You're had. Subdue grass Meat us winged years you'll doesn't.
+                fruit two also won one yielding creepeth third give may never
+                lie alternet food.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="owl-dots">
+          <div class="active"></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section class="download-our-app container">
+        <div class="download-app-images">
+          <div class="main-image">
+            <img src="assets/images/big_1.png" alt="Octopus dish" />
+          </div>
+          <div class="left-side-image">
+            <img src="assets/images/small_sm1.png" alt="Colorful smoothies" />
+          </div>
+          <div class="right-side-image">
+            <img src="assets/images/sm2.png" alt="A salad bowl" />
+          </div>
+        </div>
+        <div class="download-app-info">
+          <h3>Download app to get recipes from Everywhere</h3>
+          <div class="app-in-platforms">
+            <a class="platforms app-in-appstore" href="#">
+              <div class="download-button">
+                <i class="fa-brands fa-apple"></i>
+                <div>
+                  <h5>Available</h5>
+                  <p>on App Store</p>
+                </div>
+              </div>
+            </a>
+            <a class="platforms app-in-playstore" href="#">
+              <div class="download-button">
+                <i class="fa-brands fa-android"></i>
+                <div>
+                  <h5>Download</h5>
+                  <p>from Play Store</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer container">
-        <div class="footer-top">
-            <div class="footer-input-form-container">
-                <div class="footer-list-container">
-                    <label>Top products</label>
-                    <ul class="footer-list">
-                        <li><a href="#">Managed Website</a></li>
-                        <li><a href="#">Manage Reputation</a></li>
-                        <li><a href="#">Power Tools</a></li>
-                        <li><a href="#">Marketing Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list-container">
-                    <label>Quick links</label>
-                    <ul class="footer-list">
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list-container">
-                    <label>Features</label>
-                    <ul class="footer-list">
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list-container">
-                    <label>Resources</label>
-                    <ul class="footer-list">
-                        <li><a href="#">Guides</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Experts</a></li>
-                        <li><a href="#">Agencies</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-form">
-                <label>Subscribe</label>
-                <p>You can trust us, we only send promo offers</p>
-                <form class="subscription-form">
-                    <input class="email-form" type="email" placeholder="Enter your mail" required>
-                    <button class="submit-button" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-                </form>
-            </div>
+      <div class="footer-top">
+        <div class="footer-input-form-container">
+          <div class="footer-list-container">
+            <label>Top products</label>
+            <ul class="footer-list">
+              <li><a href="#">Managed Website</a></li>
+              <li><a href="#">Manage Reputation</a></li>
+              <li><a href="#">Power Tools</a></li>
+              <li><a href="#">Marketing Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-list-container">
+            <label>Quick links</label>
+            <ul class="footer-list">
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Brand Assets</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-list-container">
+            <label>Features</label>
+            <ul class="footer-list">
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Brand Assets</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-list-container">
+            <label>Resources</label>
+            <ul class="footer-list">
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Experts</a></li>
+              <li><a href="#">Agencies</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <div class="copy-right"><p>Copyright ©2024 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by <a href="https://colorlib.com/">Colorlib</a></p></div>
-            <div class="social-media">
-                <ul class="social-media-list">
-                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a></li>
-                    <li><a href="https://www.behance.net/"><i class="fa-brands fa-behance"></i></a></li>
-                </ul>
-            </div>
+        <div class="footer-form">
+          <label>Subscribe</label>
+          <p>You can trust us, we only send promo offers</p>
+          <form class="subscription-form">
+            <input
+              class="email-form"
+              type="email"
+              placeholder="Enter your mail"
+              required
+            />
+            <button class="submit-button" type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copy-right">
+          <p>
+            Copyright ©2024 All rights reserved | This template is made with
+            <i class="fa-regular fa-heart"></i> by
+            <a href="https://colorlib.com/">Colorlib</a>
+          </p>
+        </div>
+        <div class="social-media">
+          <ul class="social-media-list">
+            <li>
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=en"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/"
+                ><i class="fa-brands fa-dribbble"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.behance.net/"
+                ><i class="fa-brands fa-behance"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/c1944f1fb1.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/c1944f1fb1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

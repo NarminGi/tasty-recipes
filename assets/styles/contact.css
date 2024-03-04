@@ -408,7 +408,7 @@
 .contact-form .contact-form-flex .contact-info .contact-info-items .contact-info-text p {
   font-family: var(--font-fam-robot);
   font-size: 14px;
-  color: var(--contact-icon);
+  color: var(--input-form-clr);
 }
 @media (max-width: 991px) {
   .contact-form .contact-form-flex {
@@ -616,6 +616,11 @@
   --footer-button-txt: rgb(108, 117, 121);
   --footer-input-bg: rgb(60, 65, 68);
   --footer-placeholder: rgb(84, 91, 95);
+  --form-txt-clr: rgb(183, 179, 173);
+  --contact-icon: rgb(143, 137, 127);
+  --input-form-clr: rgb(138, 131, 121);
+  --warning-msg: rgb(69, 75, 78);
+  --warning-bg: rgb(206, 203, 199);
   --font-fam-robot: "Roboto", sans-serif;
   --font-fam-cursive: "Satisfy", cursive;
   --font-size-thrd: 30px;
@@ -624,6 +629,4 @@
   --drop-down-margin: 25px;
   --play-video-button-size: 80px;
   --form-border-clr: rgb(203, 200, 196);
-  --form-txt-clr: rgb(183, 179, 173);
-  --contact-icon: rgb(143, 137, 127);
 }/*# sourceMappingURL=contact.css.map */
