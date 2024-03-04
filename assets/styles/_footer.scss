@@ -8,11 +8,11 @@
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 70px;
-        .footer-top-item-list{
+        .footer-input-form-container{
             flex: 1 0 68%;
             display: flex;
             flex-wrap: wrap;
-            .footer-top-item{
+            .footer-list-container{
                 flex: 1 0 25%;
                 label{
                     font-family: var(--font-fam-cursive);
@@ -39,7 +39,7 @@
                 }
             }
         }
-        .footer-top-item-input{
+        .footer-form{
             flex: 1 0 32%;
             label{
                 font-family: var(--font-fam-cursive);

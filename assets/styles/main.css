@@ -909,59 +909,59 @@
   flex-wrap: wrap;
   padding-bottom: 70px;
 }
-.footer .footer-top .footer-top-item-list {
+.footer .footer-top .footer-input-form-container {
   flex: 1 0 68%;
   display: flex;
   flex-wrap: wrap;
 }
-.footer .footer-top .footer-top-item-list .footer-top-item {
+.footer .footer-top .footer-input-form-container .footer-list-container {
   flex: 1 0 25%;
 }
-.footer .footer-top .footer-top-item-list .footer-top-item label {
+.footer .footer-top .footer-input-form-container .footer-list-container label {
   font-family: var(--font-fam-cursive);
   font-size: 24px;
   text-transform: capitalize;
 }
-.footer .footer-top .footer-top-item-list .footer-top-item .footer-list {
+.footer .footer-top .footer-input-form-container .footer-list-container .footer-list {
   margin-top: 40px;
 }
-.footer .footer-top .footer-top-item-list .footer-top-item .footer-list li a {
+.footer .footer-top .footer-input-form-container .footer-list-container .footer-list li a {
   font-size: 13px;
   line-height: 42px;
   color: var(--footer-text);
 }
 @media (max-width: 991px) {
-  .footer .footer-top .footer-top-item-list .footer-top-item {
+  .footer .footer-top .footer-input-form-container .footer-list-container {
     flex: 1 0 50%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
-  .footer .footer-top .footer-top-item-list .footer-top-item {
+  .footer .footer-top .footer-input-form-container .footer-list-container {
     flex: 1 0 100%;
     margin-bottom: 30px;
   }
 }
-.footer .footer-top .footer-top-item-input {
+.footer .footer-top .footer-form {
   flex: 1 0 32%;
 }
-.footer .footer-top .footer-top-item-input label {
+.footer .footer-top .footer-form label {
   font-family: var(--font-fam-cursive);
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
-.footer .footer-top .footer-top-item-input p {
+.footer .footer-top .footer-form p {
   color: var(--footer-text);
   font-size: 14px;
   line-height: 26px;
   margin: 50px 0 40px 0;
 }
-.footer .footer-top .footer-top-item-input .subscription-form {
+.footer .footer-top .footer-form .subscription-form {
   position: relative;
   margin-bottom: 20px;
 }
-.footer .footer-top .footer-top-item-input .subscription-form .email-form {
+.footer .footer-top .footer-form .subscription-form .email-form {
   width: 100%;
   padding: 18px 0px 18px 20px;
   outline: none;
@@ -970,15 +970,15 @@
   font-family: var(--font-fam-robot);
   border: none;
 }
-.footer .footer-top .footer-top-item-input .subscription-form .email-form::-moz-placeholder {
+.footer .footer-top .footer-form .subscription-form .email-form::-moz-placeholder {
   color: var(--footer-placeholder);
   font-size: 14px;
 }
-.footer .footer-top .footer-top-item-input .subscription-form .email-form::placeholder {
+.footer .footer-top .footer-form .subscription-form .email-form::placeholder {
   color: var(--footer-placeholder);
   font-size: 14px;
 }
-.footer .footer-top .footer-top-item-input .subscription-form .submit-button {
+.footer .footer-top .footer-form .subscription-form .submit-button {
   position: absolute;
   top: 0;
   right: 0;
@@ -988,18 +988,18 @@
   outline: none;
   border: none;
 }
-.footer .footer-top .footer-top-item-input .subscription-form .submit-button i {
+.footer .footer-top .footer-form .subscription-form .submit-button i {
   padding: 0px 22px;
   font-size: 14px;
   color: var(--off-black);
 }
 @media (max-width: 991px) {
-  .footer .footer-top .footer-top-item-input {
+  .footer .footer-top .footer-form {
     width: 43%;
   }
 }
 @media (max-width: 768px) {
-  .footer .footer-top .footer-top-item-input {
+  .footer .footer-top .footer-form {
     width: 100%;
   }
 }
