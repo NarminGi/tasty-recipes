@@ -8,7 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 70px;
-        .footer-input-form-container{
+        .footer-list-form-container{
             flex: 1 0 68%;
             display: flex;
             flex-wrap: wrap;
@@ -114,14 +114,14 @@
                 display: flex;
                 gap: 5px;
                 li{
-                    width: 40px;
-                    height: 40px;
                     background-color: var(--footer-button-bg);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
                     transition: background-color 0.3s, color 0.3s;
                     a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
                         i{
                             color: var(--footer-button-txt);
                             font-size: 15px;

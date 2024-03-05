@@ -2,10 +2,6 @@
   width: 100%;
   position: absolute;
   color: var(--off-black);
-  /* personal notes for later use:
-  padding-top: 1.82% !important;
-  padding-bottom: 1.82% !important;
-  */
 }
 .header .header-container {
   display: flex;
@@ -40,10 +36,11 @@
   font-family: var(--font-fam-robot);
   font-size: 15px;
   font-weight: 500;
+  padding-top: 13.8%;
 }
 .header .header-container .nav-bar .nav-list .nav-list-item {
   cursor: pointer;
-  padding: 13.8% 0%;
+  padding-bottom: 13.8%;
 }
 .header .header-container .nav-bar .nav-list .nav-list-item a {
   color: var(--off-black);
@@ -64,6 +61,7 @@
   padding: 10px 30px;
   visibility: hidden;
   opacity: 0;
+  transition: transform 0.6s;
 }
 .header .header-container .nav-bar .nav-list .blog .blog-list .blog {
   margin-bottom: var(--drop-down-margin);
@@ -71,7 +69,7 @@
 .header .header-container .nav-bar .nav-list .blog:hover .blog-list {
   visibility: visible;
   opacity: 1;
-  animation: dropdownList 0.7s;
+  transform: translateY(-5%);
 }
 .header .header-container .nav-bar .nav-list .pages {
   position: relative;
@@ -85,6 +83,7 @@
   padding: 10px 30px;
   visibility: hidden;
   opacity: 0;
+  transition: transform 0.6s;
 }
 .header .header-container .nav-bar .nav-list .pages .page-list .recipe {
   margin-bottom: var(--drop-down-margin);
@@ -92,19 +91,7 @@
 .header .header-container .nav-bar .nav-list .pages:hover .page-list {
   visibility: visible;
   opacity: 1;
-  animation: dropdownList 0.7s;
-}
-@keyframes dropdownList {
-  0% {
-    top: 73%;
-    visibility: hidden;
-    opacity: 0;
-  }
-  100% {
-    top: var(--drop-down-top);
-    visibility: visible;
-    opacity: 1;
-  }
+  transform: translateY(-5%);
 }
 @media (max-width: 991px) {
   .header .header-container .nav-bar .nav-list {
@@ -433,35 +420,35 @@
   flex-wrap: wrap;
   padding-bottom: 70px;
 }
-.footer .footer-top .footer-input-form-container {
+.footer .footer-top .footer-list-form-container {
   flex: 1 0 68%;
   display: flex;
   flex-wrap: wrap;
 }
-.footer .footer-top .footer-input-form-container .footer-list-container {
+.footer .footer-top .footer-list-form-container .footer-list-container {
   flex: 1 0 25%;
 }
-.footer .footer-top .footer-input-form-container .footer-list-container label {
+.footer .footer-top .footer-list-form-container .footer-list-container label {
   font-family: var(--font-fam-cursive);
   font-size: 24px;
   text-transform: capitalize;
 }
-.footer .footer-top .footer-input-form-container .footer-list-container .footer-list {
+.footer .footer-top .footer-list-form-container .footer-list-container .footer-list {
   margin-top: 40px;
 }
-.footer .footer-top .footer-input-form-container .footer-list-container .footer-list li a {
+.footer .footer-top .footer-list-form-container .footer-list-container .footer-list li a {
   font-size: 13px;
   line-height: 42px;
   color: var(--footer-text);
 }
 @media (max-width: 991px) {
-  .footer .footer-top .footer-input-form-container .footer-list-container {
+  .footer .footer-top .footer-list-form-container .footer-list-container {
     flex: 1 0 50%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
-  .footer .footer-top .footer-input-form-container .footer-list-container {
+  .footer .footer-top .footer-list-form-container .footer-list-container {
     flex: 1 0 100%;
     margin-bottom: 30px;
   }
@@ -549,13 +536,15 @@
   gap: 5px;
 }
 .footer .footer-bottom .social-media .social-media-list li {
-  width: 40px;
-  height: 40px;
   background-color: var(--footer-button-bg);
+  transition: background-color 0.3s, color 0.3s;
+}
+.footer .footer-bottom .social-media .social-media-list li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s, color 0.3s;
+  width: 40px;
+  height: 40px;
 }
 .footer .footer-bottom .social-media .social-media-list li a i {
   color: var(--footer-button-txt);

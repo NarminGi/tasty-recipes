@@ -2,10 +2,6 @@
     width: 100%;
     position: absolute;
     color: var(--off-black);
-    /* personal notes for later use:
-    padding-top: 1.82% !important;
-    padding-bottom: 1.82% !important;
-    */
     .header-container{
         display: flex;
         justify-content: space-between;
@@ -33,9 +29,10 @@
                 font-family: var(--font-fam-robot);
                 font-size: 15px;
                 font-weight: 500;
+                padding-top: 13.8%;
                 .nav-list-item{
                     cursor: pointer;
-                    padding: 13.8%  0%;
+                    padding-bottom: 13.8%;
                     a {
                         color:var(--off-black);
                     }
@@ -55,6 +52,7 @@
                         padding: 10px 30px;
                         visibility: hidden;
                         opacity: 0;
+                        transition: transform 0.6s;
                         .blog{
                             margin-bottom: var(--drop-down-margin);
                         }
@@ -63,7 +61,7 @@
                         .blog-list {
                             visibility: visible;
                             opacity: 1;
-                            animation: dropdownList 0.7s;
+                            transform: translateY(-5%);
                         }
                     }
                 }
@@ -78,6 +76,7 @@
                         padding: 10px 30px;
                         visibility: hidden;
                         opacity: 0;
+                        transition: transform 0.6s;
                         .recipe{
                             margin-bottom: var(--drop-down-margin);
                         }
@@ -86,20 +85,8 @@
                         .page-list {
                             visibility: visible;
                             opacity: 1;
-                            animation: dropdownList 0.7s;
+                            transform: translateY(-5%);
                         }
-                    }
-                }
-                @keyframes dropdownList{
-                    0%{
-                        top: 73%;
-                        visibility: hidden;
-                        opacity: 0;
-                    }
-                    100%{
-                        top: var(--drop-down-top);
-                        visibility: visible;
-                        opacity: 1;
                     }
                 }
                 @media (max-width: 991px){
